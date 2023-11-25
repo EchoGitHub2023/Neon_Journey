@@ -1,0 +1,124 @@
+/*This is the yellow-red-black stripe part*/
+body{
+    background: repeating-linear-gradient(rgb(0 ,0 ,0), rgb(240, 0, 0), rgb(0, 0, 0), rgb(240, 200, 0), rgb(0 ,0 ,0), rgb(0, 240, 200), rgb(240, 0, 0), rgb(0, 0, 0), rgb(240, 200, 0) 1.5%);
+    padding: 60px;
+    width: 100%;
+    font-family: Arial, helvetica;
+    }
+    /*Thie is the big dark-gray box where everything is in.*/
+    .Journey{
+    width: 650px;
+    padding: 35px;
+    position: relative;
+    display: block;
+    margin: auto;
+    background-color: rgb(30, 40, 50);
+    border: ridge 12px rgb(220, 220, 240);
+    border-radius: 20px;
+    }
+    
+    /*necessay for make the big title in the center*/
+    .Center2{
+      text-align: center;
+    }
+    
+    .CenterTitle{
+      display: inline-block;
+      padding: 20px 65px 20px 65px;
+      border: thick double rgb(240, 220, 190);
+      border-radius: 20px;
+      background-color: rgb(150, 60, 0);
+     margin: 20px 0px 40px 0px;
+     color: rgb(255, 150, 30);
+     font-size: 30px;
+     font-weight: bold;
+    }
+    
+    h2{
+      padding: 20px 0px 0px 0px;
+      color: rgb(255, 150, 30);
+    }
+    
+    /*have to change that ul dot to white.*/
+    ul {list-style: none}
+    li::before {content: "•"; color: white;
+      display: inline-block; width: 1em;
+      margin-left: -1em}
+    /*the default link colors are hard to read on dark baground, so all changed.*/
+    a:link {
+      color: rgb(255, 150, 30);
+      text-decoration: underline;
+    }
+    a:visited {
+      color: rgb(60, 200, 180);
+      text-decoration: none;
+    }
+    a:hover {
+      color: rgb(200, 80, 20);
+      text-decoration: none;
+      font-weight: bold;
+    }
+      
+    /*tabs are subtitles*/
+    .tabs{
+    display: block;
+    margin: 45px 0px 20px 0px;
+    border-radius: 8px;
+    background-color: rgb(150, 60, 0);
+    color: rgb(220, 220, 200);
+    padding: 10px;
+    font-family: Arial Black;
+    }
+    /*pics are pictures*/
+    .pics{
+      display: inline-block;
+      width: 375px;
+      float: left;
+      border-radius: 20px;
+    }
+    /*stories are texts.*/
+    .stories{
+      display: inline-block;
+      width: 240px;
+      color: white;
+    }
+    /*pages are pic & stories together*/
+    .pages{
+      display: flex;  
+    }
+    /*this is the empty strip between pics and stories*/
+    .grow{
+      flex-grow: 1;
+    }
+    /*after polishing the other stuff, I decided to make rhe youtube to look like a tv.*/
+    iframe{
+     display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 40px;
+      border: ridge 10px rgb(240, 220, 190);
+     border-radius: 30px; 
+    }
+    
+    /*try a bit of JS.*/
+    /*need to learn about <p><a> v.s. <p a>*/
+    .share{
+     margin: 60px 0px 20px 0px;
+     color: white;
+    }
+    p{
+      color: rgb(255, 255, 255);
+    }
+    p a:hover {
+      color: rgb(255, 255, 255);
+    }
+    p a {
+      display: inline-block;
+      font-family: Arial Black;
+      font-size: 16px;
+      /*margin: 20px 40px 0px;*/
+      padding: 20px 50px;
+      background-color: rgb(255, 150, 30);
+      color: rgb(255, 255, 255);
+      border-radius: 20px;
+      }
